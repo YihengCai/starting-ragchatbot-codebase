@@ -48,7 +48,11 @@ cd backend
 uv run uvicorn app:app --reload --port 8000
 ```
 
-**Important**: Always use `uv` commands - do not use `pip` directly. All Python execution should be through `uv run`.
+**Important**: Always use `uv` for all dependency management and Python execution:
+- Use `uv sync` to install dependencies (not `pip install`)  
+- Use `uv add [package]` to add new dependencies (not `pip install [package]`)
+- Use `uv run [command]` for all Python execution (not direct python commands)
+- Never use `pip` directly - this project uses `uv` for package management
 
 ### Access Points
 - Web Interface: http://localhost:8000
