@@ -48,6 +48,8 @@ cd backend
 uv run uvicorn app:app --reload --port 8000
 ```
 
+**Important**: Always use `uv` commands - do not use `pip` directly. All Python execution should be through `uv run`.
+
 ### Access Points
 - Web Interface: http://localhost:8000
 - API Documentation: http://localhost:8000/docs
