@@ -716,3 +716,27 @@ details[open] .suggested-header::before {
         width: 280px;
     }
 }
+
+/* Source Links Styling */
+.source-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.source-link:hover {
+    color: var(--text-primary);
+    border-bottom-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.source-link:focus {
+    outline: 2px solid var(--focus-ring);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+.source-text {
+    color: var(--text-secondary);
+}
